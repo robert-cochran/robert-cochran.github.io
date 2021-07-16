@@ -14,7 +14,7 @@
 				background: black;
 			}
 
-			#myVideo {
+			#videoPlayer {
 				position: fixed;
 				right: 0;
 				bottom: 0;
@@ -55,21 +55,25 @@
 		</video> -->
 
 		<iframe 
-			id="myVideo" 
-			src="https://www.youtube.com/embed/0nTO4zSEpOs" 
+			id="videoPlayer" 
+			src="https://www.youtube.com/embed/0nTO4zSEpOs?autoplay=1" 
 			title="Video" 
-			style="background-color:Black;"
-			frameborder="0"></iframe>
+			style="background-color:yellow;"
+			frameborder="0"
+			modestbranding="1"
+			controls="0"
+		>
+		</iframe>
 
 
-		<!-- <div class="content">
-		<h1>Heading</h1>
-		<p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-		<button id="myBtn" onclick="myFunction()">Pause</button>
-		</div> -->
+		<div class="content">
+			<h1>PAUSE</h1>
+			<p>Pause Button</p>
+			<button id="myBtn" onclick="myFunction()">Pause</button>
+		</div>
 
 		<script>
-			var video = document.getElementById("myVideo");
+			var video = document.getElementById("videoPlayer");
 			var btn = document.getElementById("myBtn");
 
 			function myFunction() {
